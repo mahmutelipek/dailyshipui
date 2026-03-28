@@ -27,8 +27,11 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 
-# Next.js otomatik (web)
-web/next-env.d.ts
+# Next.js otomatik
+next-env.d.ts
+
+# Eski `web/` yolu — taşıma sonrası yerelde kalan node_modules/.next
+/web/
 
 # Yedek dosyalar
 *.old
