@@ -1,0 +1,985 @@
+{
+  "version": "2.9",
+  "children": [
+    {
+      "type": "frame",
+      "id": "nwRCD",
+      "x": -60,
+      "y": 305,
+      "name": "DailyShipUI Landing Page",
+      "width": 1440,
+      "fill": "#E8E9EB",
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "G9Byo",
+          "name": "Navigation",
+          "width": "fill_container",
+          "height": 72,
+          "fill": "#E8E9EB",
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ssKeX",
+              "name": "logo",
+              "fill": "#1A1A1A",
+              "content": "DailyShipUI",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 24,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "rUTnp",
+              "name": "navLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QAFjV",
+                  "name": "navHow",
+                  "fill": "#666666",
+                  "content": "Nasıl Çalışır?",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "5CGhg",
+                  "name": "navFaq",
+                  "fill": "#666666",
+                  "content": "SSS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "iH5hB",
+                  "name": "navCta",
+                  "fill": "#1A1A1A",
+                  "content": "Katıl ↗",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "sHJhg",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "#e8e9eb",
+          "layout": "vertical",
+          "padding": [
+            128,
+            128,
+            128,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "edWzl",
+              "name": "Hero Content",
+              "height": 341,
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ukzws",
+                  "name": "Subheadline",
+                  "fill": "#000000ff",
+                  "content": "30 Günde AI-Native Tasarımcı Ol.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 88,
+                  "fontWeight": "500",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "eQZXr",
+                  "name": "taglineWrapper",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "padding": [
+                    24,
+                    0,
+                    0,
+                    0
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "slBo8",
+                      "name": "heroTagline",
+                      "fill": "#666666",
+                      "content": "30 gün. 30 e-posta. Statik pikselleri unut, AI promptlarıyla çalışan arayüzler inşa et.",
+                      "lineHeight": 1.6,
+                      "textAlign": "center",
+                      "fontFamily": "Geist",
+                      "fontSize": 16,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Gvlbm",
+                  "name": "Hero Email Form",
+                  "height": "fit_content(87)",
+                  "gap": 12,
+                  "padding": [
+                    32,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "It4La",
+                      "name": "Email Input",
+                      "width": 300,
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "padding": [
+                        0,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "70r56",
+                          "name": "heroInputText",
+                          "fill": "#00000080",
+                          "content": "sen@tasarimci.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "54Auf",
+                      "name": "Submit Button",
+                      "height": "fill_container",
+                      "fill": "#f6339a",
+                      "cornerRadius": 12,
+                      "padding": [
+                        16,
+                        28
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Lui3e",
+                          "name": "heroSubmitText",
+                          "rotation": 0.3589232627606315,
+                          "fill": "#fce3efff",
+                          "content": "KATIL ↗",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "jWbVo",
+                  "name": "heroTrust",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 412,
+                  "content": "Tek seferlik ödeme. 30 UX Problemi.",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "iI4ar",
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./herosectionbg.png",
+                "mode": "fill"
+              },
+              "width": 956,
+              "height": 500
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jsK1S",
+          "name": "How It Works",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            180,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "QY1MI",
+              "name": "sectionLabel3",
+              "fill": "#1A1A1A",
+              "content": "Satın Aldığında Ne Olacak?",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 64,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "992kT",
+              "name": "Steps Container",
+              "width": "fill_container",
+              "gap": 48,
+              "padding": [
+                48,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Wxi6p",
+                  "name": "Step 1",
+                  "width": 280,
+                  "fill": "#00000000",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LRoCx",
+                      "name": "Icon 1",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#1A1A1A",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "j8ATw",
+                          "name": "iconText1",
+                          "fill": "#FFFFFF",
+                          "content": "📮",
+                          "fontFamily": "Geist",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "MbHUb",
+                      "name": "stepTitle1",
+                      "fill": "#1A1A1A",
+                      "content": "Görevi Al",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sQ0c9",
+                      "name": "stepDesc1",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Her sabah 09:00'da e-postana yeni bir UX problemi ve tasarım görevi düşer.",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qxTrn",
+                  "name": "Step 2",
+                  "width": 280,
+                  "fill": "#00000000",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "0Aw2w",
+                      "name": "Icon 2",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#1A1A1A",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1nJox",
+                          "name": "iconText2",
+                          "fill": "#FFFFFF",
+                          "content": "⚡",
+                          "fontFamily": "Geist",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "u4xCO",
+                      "name": "stepTitle2",
+                      "fill": "#1A1A1A",
+                      "content": "AI'ı Yönet",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "sdsFY",
+                      "name": "stepDesc2",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Cursor ve Pencil'ı aç. Gelen prompt ipuçlarıyla AI'a direktif ver, tasarımı yont.",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TBXrh",
+                  "name": "Step 3",
+                  "width": 280,
+                  "fill": "#00000000",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2R7Ys",
+                      "name": "Icon 3",
+                      "width": 64,
+                      "height": 64,
+                      "fill": "#1A1A1A",
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "V4laC",
+                          "name": "iconText3",
+                          "fill": "#FFFFFF",
+                          "content": "🚀",
+                          "fontFamily": "Geist",
+                          "fontSize": 28,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "skGBz",
+                      "name": "stepTitle3",
+                      "fill": "#1A1A1A",
+                      "content": "Canlıya Al",
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "500"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SLzTa",
+                      "name": "stepDesc3",
+                      "fill": "#666666",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sadece bir resim değil. Çalışan arayüzünü anında yayınla ve #DailyShipUI ile paylaş.",
+                      "lineHeight": 1.5,
+                      "textAlign": "center",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F04qc",
+          "name": "FAQ Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            80,
+            200,
+            134,
+            256
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "zUkTn",
+              "name": "sectionLabel3",
+              "fill": "#1A1A1A",
+              "content": "Sıkça Sorulan Sorular",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 64,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "5OPgq",
+              "name": "FAQ Container",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                48,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Tduyo",
+                  "name": "FAQ 1",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": {
+                    "thickness": {
+                      "top": 1
+                    },
+                    "fill": "#E0E0E0"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mkvqu",
+                      "name": "faq1Q",
+                      "fill": "#1A1A1A",
+                      "content": "Kod bilmem şart mı?",
+                      "fontFamily": "Geist",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tXHbi",
+                      "name": "faq1A",
+                      "fill": "#666666",
+                      "content": "Hayır. Kodlama ameleliğini AI yapıyor, sen görsel hiyerarşiyi ve deneyimi yönetiyorsun.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Ziuqn",
+                  "name": "FAQ 2",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": {
+                    "thickness": {
+                      "top": 1
+                    },
+                    "fill": "#E0E0E0"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UGrOx",
+                      "name": "faq2Q",
+                      "fill": "#1A1A1A",
+                      "content": "Hangi araçlar lazım?",
+                      "fontFamily": "Geist",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "BEb3t",
+                      "name": "faq2A",
+                      "fill": "#666666",
+                      "content": "Sadece Cursor ve Pencil. Başka hiçbir kuruluma gerek yok.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kqviq",
+                  "name": "FAQ 3",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": {
+                    "thickness": {
+                      "top": 1
+                    },
+                    "fill": "#E0E0E0"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NaRWO",
+                      "name": "faq3Q",
+                      "fill": "#1A1A1A",
+                      "content": "Abonelik mi?",
+                      "fontFamily": "Geist",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Ujx3k",
+                      "name": "faq3A",
+                      "fill": "#666666",
+                      "content": "Hayır. Sürpriz fatura yok. Sadece $19.90 tek seferlik ödeme.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tXkOH",
+                  "name": "FAQ 4",
+                  "width": "fill_container",
+                  "fill": "#00000000",
+                  "stroke": {
+                    "thickness": {
+                      "top": 1,
+                      "bottom": 1
+                    },
+                    "fill": "#E0E0E0"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": [
+                    16,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TpEgV",
+                      "name": "faq4Q",
+                      "fill": "#1A1A1A",
+                      "content": "Bu bir video kursu mu?",
+                      "fontFamily": "Geist",
+                      "fontSize": 16,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pw1k4",
+                      "name": "faq4A",
+                      "fill": "#666666",
+                      "content": "Hayır. Sıkıcı teorik videolar yok. Her gün 1 mail, 1 pratik. Yap ve geç.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Geist",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8Plk2",
+          "name": "Footer",
+          "clip": true,
+          "width": "fill_container",
+          "layout": "vertical",
+          "padding": [
+            64,
+            0,
+            0,
+            0
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "EFyTV",
+              "name": "Footer Content",
+              "width": 600,
+              "layout": "vertical",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "wj1y9",
+                  "name": "sectionLabel3",
+                  "fill": "#1A1A1A",
+                  "content": "Sadece tasarlama, inşa et.",
+                  "fontFamily": "Instrument Serif",
+                  "fontSize": 64,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "0cJaO",
+                  "name": "footerSubline",
+                  "fill": "#00000080",
+                  "content": "AI ile çalışan arayüzler yaratmaya bugün başla.",
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "ap2x3",
+                  "name": "Hero Email Form",
+                  "height": "fit_content(87)",
+                  "gap": 12,
+                  "padding": [
+                    32,
+                    0,
+                    0,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "dIZMe",
+                      "name": "Email Input",
+                      "width": 300,
+                      "height": "fill_container",
+                      "fill": "#FFFFFF",
+                      "cornerRadius": 12,
+                      "padding": [
+                        0,
+                        20
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "q970R",
+                          "name": "heroInputText",
+                          "fill": "#00000080",
+                          "content": "sen@tasarimci.com",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "A0LGa",
+                      "name": "Submit Button",
+                      "height": "fill_container",
+                      "fill": "#f6339a",
+                      "cornerRadius": 12,
+                      "padding": [
+                        16,
+                        28
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "MsXva",
+                          "name": "heroSubmitText",
+                          "rotation": 0.3589232627606315,
+                          "fill": "#fce3efff",
+                          "content": "KATIL ↗",
+                          "fontFamily": "Geist",
+                          "fontSize": 14,
+                          "fontWeight": "bold",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "9pZan",
+                  "name": "heroTrust",
+                  "fill": "#64748B",
+                  "textGrowth": "fixed-width",
+                  "width": 412,
+                  "content": "Kredi kartı ile güvenli ödeme.",
+                  "fontFamily": "Geist",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "8UrSh",
+              "name": "footerLogo",
+              "fill": "#00000033",
+              "textGrowth": "fixed-width",
+              "width": 1440,
+              "content": "DailyShipUI",
+              "textAlign": "center",
+              "fontFamily": "Instrument Serif",
+              "fontSize": 346,
+              "fontWeight": "200",
+              "letterSpacing": 2
+            },
+            {
+              "type": "rectangle",
+              "id": "TJ8uX",
+              "layoutPosition": "absolute",
+              "x": 964,
+              "y": 434,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./footer.png",
+                "mode": "fill"
+              },
+              "width": 476,
+              "height": 336
+            },
+            {
+              "type": "rectangle",
+              "id": "ghmNo",
+              "layoutPosition": "absolute",
+              "x": 0,
+              "y": 527,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./footerv2.png",
+                "mode": "fill"
+              },
+              "width": 344,
+              "height": 243
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "M5uTV",
+      "x": 97,
+      "y": -22,
+      "name": "EmailForm",
+      "reusable": true,
+      "height": "fit_content(0)",
+      "gap": 12,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "wfgsh",
+          "name": "SubmitButton",
+          "height": "fill_container",
+          "fill": "#f6339a",
+          "cornerRadius": 12,
+          "padding": [
+            16,
+            28
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "e317B",
+              "rotation": 0.3589232627606315,
+              "fill": "#fce3efff",
+              "content": "Start Building ↗",
+              "fontFamily": "Geist",
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "letterSpacing": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "3jsTL",
+      "x": 187,
+      "y": 84,
+      "name": "SectionTitle",
+      "reusable": true,
+      "layout": "vertical",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "UcyIa",
+          "fill": "#1A1A1A",
+          "content": "Section Title",
+          "textAlign": "center",
+          "fontFamily": "Instrument Serif",
+          "fontSize": 64,
+          "fontWeight": "normal",
+          "letterSpacing": -1
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "2Vz0D",
+      "x": -60,
+      "y": 105,
+      "name": "StepCard",
+      "reusable": true,
+      "width": 280,
+      "layout": "vertical",
+      "gap": 12,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "egVVl",
+          "content": "🚀",
+          "fontFamily": "Inter",
+          "fontSize": 48,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "4Z5hS",
+          "fill": "#1A1A1A",
+          "content": "Step Title",
+          "fontFamily": "Instrument Serif",
+          "fontSize": 20,
+          "fontWeight": "medium"
+        },
+        {
+          "type": "text",
+          "id": "ZzswH",
+          "fill": "#666666",
+          "content": "Step description goes here.",
+          "textAlign": "center",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rt0FU",
+      "x": -60,
+      "y": -127,
+      "name": "InputField",
+      "width": 300,
+      "height": "fill_container(1)",
+      "fill": "#FFFFFF",
+      "cornerRadius": 12,
+      "padding": [
+        0,
+        20
+      ],
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "KHsvQ",
+          "fill": "#00000080",
+          "content": "you@designer.com",
+          "fontFamily": "Inter",
+          "fontSize": 14,
+          "fontWeight": "500"
+        }
+      ]
+    }
+  ]
+}
