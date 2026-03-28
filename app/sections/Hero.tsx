@@ -25,8 +25,8 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Image — mobilde +%25 yükseklik (45vh → 56.25vh), sm+ aynı */}
-      <div className="relative aspect-[16/10] max-h-[56.25vh] w-full max-w-[980px] sm:max-h-[45vh]">
+      {/* Image — mobil max-h 84.375vh (önceki 56.25vh × 1.5), sm+ 45vh */}
+      <div className="relative aspect-[16/10] max-h-[84.375vh] w-full max-w-[980px] sm:max-h-[45vh]">
         <Image
           src="/herosectionbg.png"
           alt=""
