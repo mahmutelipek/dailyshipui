@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <section className="relative isolate flex min-h-[min(100dvh,900px)] w-full flex-col overflow-hidden bg-[#F3F3F3] py-12 sm:py-16 md:min-h-[100dvh] md:h-[100dvh] md:py-0">
+    <section className="relative isolate flex w-full flex-col overflow-hidden bg-[#F3F3F3] py-12 pb-0 max-md:min-h-0 sm:py-16 md:min-h-[100dvh] md:h-[100dvh] md:py-0">
       {/* Köşe PNG — wordmark SVG (z-12) üstünde */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-[14] h-[120px] w-[min(52vw,200px)] sm:h-[140px] sm:w-[200px] md:h-[185px] md:w-[260px] lg:h-[210px] lg:w-[300px] xl:h-[243px] xl:w-[344px]">
         <Image

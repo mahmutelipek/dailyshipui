@@ -25,7 +25,6 @@ export default function Navigation() {
         observer = new IntersectionObserver(
           ([entry]) => setFooterInView(entry.isIntersecting),
           {
-            // min(18vh, 220px) — API yalnızca px/% kabul eder; değer JS ile hesaplanır
             rootMargin: `0px 0px -${bottomInset}px 0px`,
             threshold: 0,
           }
@@ -46,18 +45,13 @@ export default function Navigation() {
   }, []);
 
   return (
-    <>
     <nav
       className={cn(
         "fixed inset-x-0 top-0 z-50 flex h-[72px] w-full min-w-0 items-center justify-between gap-2 border-b border-black/[0.06] bg-[#F3F3F3] px-3 transition-transform duration-300 ease-out sm:gap-3 sm:px-8 lg:px-16 xl:px-20",
         footerInView && "-translate-y-full pointer-events-none"
       )}
     >
-      <Link
-        href="/"
-        className="hidden shrink-0 items-center sm:flex"
-        aria-label="DailyShipUI"
-      >
+      <Link href="/" className="flex shrink-0 items-center" aria-label="DailyShipUI">
         <Image
           src="/logo.svg"
           alt=""
@@ -68,7 +62,7 @@ export default function Navigation() {
         />
       </Link>
 
-      <div className="ml-auto flex min-w-0 shrink-0 items-center gap-2 sm:ml-0 sm:gap-6 lg:gap-8">
+      <div className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-6 lg:gap-8">
         <Link
           href="#how-it-works"
           className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
@@ -80,25 +74,5 @@ export default function Navigation() {
         </Button>
       </div>
     </nav>
-
-      {/* Mobil: logo altta sabit (üst nav’da logo yok); footer görünürken üst bar gibi gizlenir */}
-      <div
-        className={cn(
-          "fixed inset-x-0 bottom-0 z-50 flex h-[72px] items-center justify-center border-t border-black/[0.06] bg-[#F3F3F3] px-3 transition-transform duration-300 ease-out pb-[env(safe-area-inset-bottom,0px)] sm:hidden",
-          footerInView && "translate-y-full pointer-events-none"
-        )}
-      >
-        <Link href="/" className="flex items-center" aria-label="DailyShipUI">
-          <Image
-            src="/logo.svg"
-            alt=""
-            width={200}
-            height={32}
-            className="h-8 w-auto"
-            priority
-          />
-        </Link>
-      </div>
-    </>
   );
 }
