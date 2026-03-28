@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
+
+import ScrollToTopOnLoad from "@/components/ScrollToTopOnLoad";
 import "./globals.css";
 
 const inter = Inter({
@@ -30,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ScrollToTopOnLoad />
+        {children}
+      </body>
     </html>
   );
 }

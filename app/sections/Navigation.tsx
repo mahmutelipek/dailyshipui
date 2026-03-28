@@ -2,13 +2,22 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState, type MouseEvent } from "react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export default function Navigation() {
+  const pathname = usePathname();
   const [footerInView, setFooterInView] = useState(false);
+
+  const onLogoClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     let observer: IntersectionObserver | undefined;
@@ -55,6 +64,7 @@ export default function Navigation() {
     >
       <Link
         href="/"
+        onClick={onLogoClick}
         className="hidden shrink-0 items-center sm:flex"
         aria-label="DailyShipUI"
       >
@@ -84,11 +94,16 @@ export default function Navigation() {
       {/* Mobil: logo altta sabit (üst nav’da logo yok); footer görünürken üst bar gibi gizlenir */}
       <div
         className={cn(
-          "fixed inset-x-0 bottom-0 z-50 flex h-[72px] items-center justify-center border-t border-black/[0.06] bg-[#F3F3F3] px-3 transition-transform duration-300 ease-out pb-[env(safe-area-inset-bottom,0px)] sm:hidden",
+          "fixed inset-x-0 bottom-0 z-50 flex items-end justify-center border-t border-black/[0.06] bg-[#F3F3F3] px-3 pt-0 pb-[max(4px,env(safe-area-inset-bottom,0px))] transition-transform duration-300 ease-out sm:hidden",
           footerInView && "translate-y-full pointer-events-none"
         )}
       >
-        <Link href="/" className="flex items-center" aria-label="DailyShipUI">
+        <Link
+          href="/"
+          onClick={onLogoClick}
+          className="flex translate-y-0.5 items-end leading-none"
+          aria-label="DailyShipUI"
+        >
           <Image
             src="/logo.svg"
             alt=""
