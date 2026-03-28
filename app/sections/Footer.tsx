@@ -32,7 +32,7 @@ export default function Footer() {
             id="footer-nav-hide"
             className="mx-auto flex w-full max-w-xl flex-col items-center justify-start text-center"
           >
-            <h2 className="mb-4 w-full font-serif text-4xl font-normal tracking-[-0.02em] text-[#1A1A1A] sm:text-5xl md:text-[72px]">
+            <h2 className="mb-4 w-full font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-medium leading-[1.05] tracking-[-0.02em] text-[#1A1A1A] sm:text-5xl sm:font-normal sm:leading-none md:text-[72px] md:leading-[1.05]">
               Evolve your craft. Start building.
             </h2>
             <p className="mb-6 max-w-xl font-sans text-sm font-medium leading-relaxed text-[#00000080]">
