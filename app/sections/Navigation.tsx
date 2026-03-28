@@ -25,6 +25,7 @@ export default function Navigation() {
         observer = new IntersectionObserver(
           ([entry]) => setFooterInView(entry.isIntersecting),
           {
+            // min(18vh, 220px) — API yalnızca px/% kabul eder; değer JS ile hesaplanır
             rootMargin: `0px 0px -${bottomInset}px 0px`,
             threshold: 0,
           }
