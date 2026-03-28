@@ -25,8 +25,9 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Image — mobil genişlik 150vw (%50 daha geniş); sm+ max-w 1470px (980×1.5) */}
-      <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none -translate-x-1/2 left-1/2 sm:left-auto sm:w-full sm:max-w-[1470px] sm:translate-x-0 sm:max-h-[45vh]">
+      {/* Image — mobil: 150vw, üst sarmalayıcı flex ile tam ortada; sm+ aynı max-w */}
+      <div className="flex w-full shrink-0 self-stretch justify-center">
+        <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none shrink-0 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
         <Image
           src="/herosectionbg.png"
           alt=""
@@ -35,6 +36,7 @@ export default function Hero() {
           style={{ objectPosition: "center bottom" }}
           priority
         />
+        </div>
       </div>
     </section>
   );
