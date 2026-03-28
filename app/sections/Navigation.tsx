@@ -70,12 +70,6 @@ export default function Navigation() {
         >
           Nasıl Çalışır?
         </Link>
-        <Link
-          href="#faq"
-          className="whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:text-[13px]"
-        >
-          SSS
-        </Link>
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start Shipping
         </Button>
