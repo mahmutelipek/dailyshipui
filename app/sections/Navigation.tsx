@@ -71,9 +71,9 @@ export default function Navigation() {
         <Image
           src="/icon.svg"
           alt=""
-          width={85}
-          height={32}
-          className="h-8 w-auto"
+          width={128}
+          height={48}
+          className="h-12 w-auto"
           priority
         />
       </Link>
@@ -89,7 +89,7 @@ export default function Navigation() {
           href="#faq"
           className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
         >
-          FAQ?
+          FAQ
         </Link>
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start shipping
