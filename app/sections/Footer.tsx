@@ -49,9 +49,6 @@ export default function Footer() {
               Join the daily sprint and build the future today.
             </p>
             <Button type="button">Start shipping</Button>
-            <p className="mt-4 max-w-md text-center font-sans text-[13px] leading-relaxed text-black/50">
-              $24.99 one time payment. Secure checkout via Stripe.
-            </p>
           </div>
         </div>
       </div>

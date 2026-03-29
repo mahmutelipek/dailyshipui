@@ -41,15 +41,25 @@ const siteTitle = "DailyShipUI - Ship UIs with AI";
 const siteDescription =
   "A fresh challenge every morning. Become an AI-native designer in 30 days with DailyShipUI.";
 
-const ogImageAlt = "DailyShipUI — The 30 day AI design challenge";
+/** ASCII; bazı crawler’lar fancy tirede takılabiliyor. */
+const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
+
+/** Twitter önbelleğini kırmak için (dosya aynı; sunucu query’yi yok sayar). */
+const OG_CACHE_BUST = "v=3";
 
 const ogImageUrl = (() => {
   const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
-  if (cdn) return /^https?:\/\//i.test(cdn) ? cdn : `https://${cdn}`;
-  return `${siteOrigin}/opengraph.png`;
+  if (cdn) {
+    const u = /^https?:\/\//i.test(cdn) ? cdn : `https://${cdn}`;
+    const sep = u.includes("?") ? "&" : "?";
+    return `${u}${sep}${OG_CACHE_BUST}`;
+  }
+  return `${siteOrigin}/opengraph.png?${OG_CACHE_BUST}`;
 })();
 
 const canonicalUrl = `${siteOrigin}/`;
+
+const twitterDomain = new URL(canonicalUrl).hostname.replace(/^www\./, "");
 
 /** Relative URL’ler (favicon) için; OG ayrıca aşağıda elle yazılıyor. */
 const metadataBase = new URL(
@@ -97,9 +107,12 @@ export default function RootLayout({
         <meta property="og:image:height" content="1260" />
         <meta property="og:image:alt" content={ogImageAlt} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:domain" content={twitterDomain} />
         <meta name="twitter:title" content={siteTitle} />
         <meta name="twitter:description" content={siteDescription} />
         <meta name="twitter:image" content={ogImageUrl} />
+        <meta name="twitter:image:width" content="2400" />
+        <meta name="twitter:image:height" content="1260" />
         <meta name="twitter:image:alt" content={ogImageAlt} />
       </head>
       <body className="min-h-full flex flex-col">
