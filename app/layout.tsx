@@ -44,17 +44,20 @@ const siteDescription =
 /** ASCII; bazı crawler’lar fancy tirede takılabiliyor. */
 const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
 
-/** Twitter önbelleğini kırmak için (dosya aynı; sunucu query’yi yok sayar). */
-const OG_CACHE_BUST = "v=4";
+/**
+ * Sorgu dizesi (?v=…) bazı uygulama içi tarayıcılarda 404 gibi davranabiliyor.
+ * Sürümü yolda tutuyoruz; görseli güncelleyince `public/og/v5.png` + bu sabiti artır.
+ */
+const OG_IMAGE_VERSION_PATH = "/og/v4.png";
 
 const ogImageUrl = (() => {
   const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
   if (cdn) {
     const u = /^https?:\/\//i.test(cdn) ? cdn : `https://${cdn}`;
     const sep = u.includes("?") ? "&" : "?";
-    return `${u}${sep}${OG_CACHE_BUST}`;
+    return `${u}${sep}v=4`;
   }
-  return `${siteOrigin}/opengraph.png?${OG_CACHE_BUST}`;
+  return `${siteOrigin}${OG_IMAGE_VERSION_PATH}`;
 })();
 
 const canonicalUrl = `${siteOrigin}/`;
