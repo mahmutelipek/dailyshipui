@@ -32,9 +32,9 @@ export default function HowItWorks() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
           {steps.map((step) => (
-            <div key={step.title} className="flex flex-col items-center text-center gap-4">
-              <step.icon className="h-10 w-10 text-[#1A1A1A]" />
-              <h3 className="font-sans text-[22px] font-medium leading-snug text-[#1A1A1A] sm:leading-normal">
+            <div key={step.title} className="flex flex-col items-center text-center gap-3 sm:gap-4">
+              <step.icon className="h-9 w-9 text-[#1A1A1A] sm:h-10 sm:w-10" />
+              <h3 className="font-sans text-[18px] font-medium leading-snug text-[#1A1A1A] sm:leading-normal">
                 {step.title}
               </h3>
               <p className="font-sans text-sm font-medium leading-relaxed text-[#666666] max-w-xs">
