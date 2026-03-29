@@ -1,5 +1,6 @@
 import { InboxIcon, SparklesIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
 
+/** “What to Expect” steps; parent `section#how-it-works` lives in `app/page.tsx`. */
 export default function HowItWorks() {
   const steps = [
     {

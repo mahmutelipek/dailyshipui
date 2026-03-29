@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
+/** Full-viewport footer CTA + wordmark; `#footer-nav-hide` is observed by Navigation. */
 export default function Footer() {
   return (
     <section className="relative isolate flex min-h-[min(100dvh,900px)] w-full flex-col overflow-hidden bg-[#F3F3F3] py-12 sm:py-16 md:min-h-[100dvh] md:h-[100dvh] md:py-0">
