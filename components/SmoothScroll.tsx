@@ -4,7 +4,7 @@ import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import { useEffect } from "react";
 
-/** Lenis — tekerlek + dokunma için yumuşak kaydırma; #anchor linkleri. */
+/** Lenis: smooth wheel + touch scroll; smooth #anchor navigation. */
 export default function SmoothScroll() {
   useEffect(() => {
     if (typeof window === "undefined") return;
