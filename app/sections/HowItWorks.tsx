@@ -30,7 +30,9 @@ export default function HowItWorks() {
           {steps.map((step) => (
             <div key={step.title} className="flex flex-col items-center text-center gap-4">
               <step.icon className="h-10 w-10 text-[#1A1A1A]" />
-              <h3 className="font-sans text-2xl font-medium text-[#1A1A1A]">{step.title}</h3>
+              <h3 className="font-sans text-[22px] font-medium leading-snug text-[#1A1A1A] sm:text-2xl sm:leading-normal">
+                {step.title}
+              </h3>
               <p className="text-sm text-[#666666] leading-relaxed max-w-xs font-sans">
                 {step.description}
               </p>
