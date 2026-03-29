@@ -40,7 +40,7 @@ export default function Footer() {
             </p>
             <Button type="button">Start Shipping</Button>
             <p className="mt-4 text-center font-sans text-[13px] text-[#64748B] opacity-50">
-              $19 one-time payment. 30 days of challenges.
+              $24.99 one-time payment. 30 days of challenges.
             </p>
           </div>
         </div>

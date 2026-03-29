@@ -1,6 +1,7 @@
 import Navigation from "./sections/Navigation";
 import Hero from "./sections/Hero";
 import HowItWorks from "./sections/HowItWorks";
+import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <section id="how-it-works" className="scroll-mt-[72px]">
         <HowItWorks />
       </section>
+      <FAQ />
       <section id="footer" className="scroll-mt-[72px]">
         <Footer />
       </section>

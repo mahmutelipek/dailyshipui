@@ -21,7 +21,7 @@ export default function Hero() {
           Start Shipping
         </Button>
         <p className="mt-4 font-sans text-[13px] text-[#64748B]">
-          $19 one-time payment. 30 days of challenges.
+          $24.99 one-time payment. 30 days of challenges.
         </p>
       </div>
 
