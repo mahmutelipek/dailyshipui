@@ -26,15 +26,14 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Image — mobile 150vw centered via flex; sm+ same max width */}
-      <div className="flex w-full shrink-0 self-stretch justify-center">
-        <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none shrink-0 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
+      {/* Image — mobile: nudge up (bleeds toward top); sm+ unchanged */}
+      <div className="flex w-full shrink-0 self-stretch justify-center max-sm:-mt-10 max-sm:pb-1 sm:mt-0 sm:pb-0">
+        <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none shrink-0 max-sm:-translate-y-3 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh] sm:translate-y-0">
         <Image
           src="/herosectionbg.png"
           alt=""
           fill
-          className="object-contain"
-          style={{ objectPosition: "center bottom" }}
+          className="object-contain max-sm:object-[center_28%] sm:object-[center_bottom]"
           priority
         />
         </div>
