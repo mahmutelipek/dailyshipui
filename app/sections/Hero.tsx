@@ -14,15 +14,14 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mb-6 max-w-xl font-sans text-sm font-medium leading-relaxed text-[#666666] sm:mb-8">
-          I’m here to make you an AI-native designer in 30 days. A fresh challenge
-          every morning. A new skill every day.
+          30 days. 30 challenges. Become an AI native designer.
         </p>
 
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start shipping
         </Button>
         <p className="mt-4 max-w-md font-sans text-[13px] leading-relaxed text-black/50">
-          $24.99 one-time payment. Secure checkout via Stripe.
+          $24.99 one time payment. Secure checkout via Stripe.
         </p>
       </div>
 

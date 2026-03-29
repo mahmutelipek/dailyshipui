@@ -5,21 +5,21 @@ export default function HowItWorks() {
   const steps = [
     {
       icon: InboxIcon,
-      title: "09:00 AM: The daily brief",
+      title: "09:00 AM: The brief",
       description:
-        "Every single morning, a fresh UX problem and a prompt framework hit your inbox. No fluff, just your first mission of the day.",
+        "A fresh UX problem and prompt framework in your inbox every morning.",
     },
     {
       icon: SparklesIcon,
-      title: "The 30-minute execution",
+      title: "The execution",
       description:
-        "Open Cursor and Pencil. Use my frameworks to guide the AI, iterate, and refine every single pixel using just your words.",
+        "Open Cursor and Pencil. Build and refine every pixel using just your words.",
     },
     {
       icon: RocketLaunchIcon,
-      title: "The daily ship",
+      title: "The ship",
       description:
-        "By the time you finish your coffee, turn your vision into a live interface. Every day is a new build. Every day is a new superpower.",
+        "Turn your vision into a live interface before your coffee gets cold.",
     },
   ];
 

@@ -37,11 +37,11 @@ export default function Footer() {
               A fresh challenge every morning.
             </h2>
             <p className="mb-6 max-w-[300px] font-sans text-sm font-medium leading-relaxed text-[#00000080] sm:max-w-xl">
-              Join the daily sprint. Evolve your design craft and build the future today.
+              Join the daily sprint and build the future today.
             </p>
             <Button type="button">Start shipping</Button>
             <p className="mt-4 max-w-md text-center font-sans text-[13px] leading-relaxed text-black/50">
-              $24.99 one-time payment. Secure checkout via Stripe.
+              $24.99 one time payment. Secure checkout via Stripe.
             </p>
           </div>
         </div>

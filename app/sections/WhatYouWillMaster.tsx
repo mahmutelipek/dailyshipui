@@ -10,39 +10,39 @@ import {
 const items = [
   {
     icon: ChatBubbleBottomCenterTextIcon,
-    title: "Prompt engineering for UI",
+    title: "Prompt engineering",
     description:
-      "Learn how to dictate visual hierarchy, spacing, and logic to AI. You don't code; you command.",
+      "Command AI to build complex visual hierarchies.",
   },
   {
     icon: BoltIcon,
     title: "Rapid prototyping",
     description:
-      "Turn ideas into functional, clickable interfaces in minutes, not days.",
+      "Ideas to functional interfaces in minutes.",
   },
   {
     icon: ArrowPathIcon,
-    title: "AI-native workflow",
+    title: "AI native workflow",
     description:
-      'Escape the static canvas. Master the modern "design-to-live-code" loop.',
+      "Master the design to live code loop.",
   },
   {
     icon: PuzzlePieceIcon,
-    title: "Real-world UX logic",
+    title: "Real world UX",
     description:
-      "Solve 30 actual product challenges—from complex dashboards to seamless onboarding flows.",
+      "Solve 30 actual product challenges.",
   },
   {
     icon: RocketLaunchIcon,
-    title: 'The "ship" mindset',
+    title: "The ship mindset",
     description:
-      "Break free from perfectionism. Build the discipline of shipping a working product every single day.",
+      "Build the discipline of daily execution.",
   },
   {
     icon: RectangleStackIcon,
-    title: "A live portfolio",
+    title: "Live portfolio",
     description:
-      "By Day 30, you won't just have new skills; you'll have a portfolio of 30 interactive, AI-built interfaces.",
+      "30 interactive, AI built interfaces by Day 30.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function WhatYouWillMaster() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="mb-12 text-center font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:mb-16 sm:text-5xl md:max-w-4xl md:mx-auto md:text-6xl md:leading-[1.08]">
-          What you will master?
+          What you will master
         </h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-14 md:gap-y-12">
           {items.map((item) => (

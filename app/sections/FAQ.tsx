@@ -7,34 +7,28 @@ import {
 
 const items = [
   {
-    question: "Do I need to know how to code?",
+    question: "No code?",
     answer:
-      "Zero code required. The AI handles the syntax; you handle the vision, hierarchy, and UX.",
+      "Zero code required. AI handles syntax, you handle vision.",
   },
   {
-    question: "What tools do I need to start?",
-    answer:
-      "Just a laptop, a Cursor subscription (or free trial), and Pencil. No complex developer environments required.",
+    question: "Tools?",
+    answer: "Just a laptop, Cursor, and Pencil.",
   },
   {
-    question: "Is this for beginners or pro designers?",
+    question: "Miss a day?",
     answer:
-      'Both. If you’re a pro, you’ll 10x your speed. If you’re a beginner, you’ll bypass the "static" era and go straight to building interactive products.',
+      "The emails are yours forever. Catch up anytime.",
   },
   {
-    question: "What if I miss a day?",
-    answer:
-      "The emails are yours forever. The daily streak is the goal, but you can always catch up at your own pace.",
+    question: "Start date?",
+      answer:
+        "Your 30 day sprint starts the morning after you join.",
   },
   {
-    question: "Is there a specific start date?",
-    answer:
-      "Your personal 30-day sprint begins the moment you join. Your first brief will arrive in your inbox the very next morning at 09:00 AM.",
-  },
-  {
-    question: "Why is it $24.99?",
-    answer:
-      "I want to lower the barrier for designers to evolve. It’s affordable enough to start today, but enough of an investment to keep you committed for 30 days.",
+    question: "Why $24.99?",
+      answer:
+        "Low barrier to start, enough to keep you committed.",
   },
 ];
 
