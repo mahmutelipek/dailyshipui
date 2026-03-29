@@ -7,7 +7,7 @@
   "redirects": [
     {
       "source": "/v=4",
-      "destination": "/opengraph-v4.png",
+      "destination": "/",
       "permanent": false
     }
   ]
