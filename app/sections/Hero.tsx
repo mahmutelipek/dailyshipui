@@ -13,15 +13,16 @@ export default function Hero() {
           Ship UIs with AI.
         </h1>
 
-        <p className="mb-6 max-w-xl font-sans text-sm font-medium leading-relaxed text-[#666666] sm:mb-8">
-          You’re not late. I’m here to make you an AI-native designer in 30 days.
+        <p className="mx-auto mb-6 max-w-xl font-sans text-sm font-medium leading-relaxed text-[#666666] sm:mb-8">
+          I’m here to make you an AI-native designer in 30 days. A fresh challenge
+          every morning. A new skill every day.
         </p>
 
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start Shipping
         </Button>
-        <p className="mt-4 font-sans text-[13px] text-black/50">
-          $24.99 one-time payment. 30 days of challenges.
+        <p className="mt-4 max-w-md font-sans text-[13px] leading-relaxed text-black/50">
+          $24.99 one-time payment. Your first brief arrives tomorrow at 09:00 AM.
         </p>
       </div>
 

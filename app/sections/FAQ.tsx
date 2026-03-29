@@ -7,34 +7,34 @@ import {
 
 const items = [
   {
-    question: "Is this for beginners?",
-    answer:
-      'If you know your way around a design tool, you’re ready. I’m not teaching you "what a button is"—I’m teaching you how to build that button using AI.',
-  },
-  {
     question: "Do I need to know how to code?",
     answer:
-      "Zero code required. You’ll use Cursor and Pencil like a creative director. AI handles the syntax; you handle the vision.",
+      "Zero code required. The AI handles the syntax; you handle the vision, hierarchy, and UX.",
+  },
+  {
+    question: "What tools do I need to start?",
+    answer:
+      "Just a laptop, a Cursor subscription (or free trial), and Pencil. No complex developer environments required.",
+  },
+  {
+    question: "Is this for beginners or pro designers?",
+    answer:
+      "Both. If you’re a pro, you’ll 10x your speed. If you’re a beginner, you’ll bypass the \"static\" era and go straight to building interactive products.",
   },
   {
     question: "What if I miss a day?",
     answer:
-      "No stress. You own the challenges forever. Life happens—pick up where you left off whenever you're ready.",
+      "The emails are yours forever. The daily streak is the goal, but you can always catch up at your own pace.",
   },
   {
-    question: "Why $24.99?",
+    question: "Is there a specific start date?",
     answer:
-      "Because I want you to actually start. It’s cheap enough to be an impulse buy, but expensive enough to make you commit to the 30 days.",
+      "Your personal 30-day sprint begins the moment you join. Your first brief will arrive in your inbox the very next morning at 09:00 AM.",
   },
   {
-    question: "What tools do I need?",
+    question: "Why is it $24.99?",
     answer:
-      "Just a laptop, a Cursor subscription (or free trial), and Pencil. No complex dev environments or terminal commands.",
-  },
-  {
-    question: "Is there a community?",
-    answer:
-      "We use the #DailyShipUI tag on X (Twitter) and LinkedIn. Ship your work, get feedback from the cohort, and build your network while you build your portfolio.",
+      "I want to lower the barrier for designers to evolve. It’s affordable enough to start today, but enough of an investment to keep you committed for 30 days.",
   },
 ];
 

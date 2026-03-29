@@ -2,12 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { scrollToTopImmediate } from "@/lib/scroll-root";
 
 export default function Navigation() {
+  const router = useRouter();
+  const pathname = usePathname();
   const [footerInView, setFooterInView] = useState(false);
 
   useEffect(() => {
@@ -52,7 +56,18 @@ export default function Navigation() {
         footerInView && "-translate-y-full pointer-events-none"
       )}
     >
-      <Link href="/" className="flex shrink-0 items-center" aria-label="DailyShipUI">
+      <Link
+        href="/"
+        scroll={false}
+        className="flex shrink-0 items-center"
+        aria-label="DailyShipUI"
+        onClick={(e) => {
+          if (pathname !== "/") return;
+          e.preventDefault();
+          scrollToTopImmediate();
+          router.refresh();
+        }}
+      >
         <Image
           src="/logo.svg"
           alt=""

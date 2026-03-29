@@ -4,6 +4,8 @@ import Lenis from "lenis";
 import "lenis/dist/lenis.css";
 import { useEffect } from "react";
 
+import { registerLenis } from "@/lib/scroll-root";
+
 /** Lenis: smooth wheel + touch scroll; smooth #anchor navigation. */
 export default function SmoothScroll() {
   useEffect(() => {
@@ -16,8 +18,10 @@ export default function SmoothScroll() {
       syncTouch: true,
       lerp: 0.09,
     });
+    registerLenis(lenis);
 
     return () => {
+      registerLenis(null);
       lenis.destroy();
     };
   }, []);

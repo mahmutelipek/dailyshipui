@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
+import ScrollToTop from "@/components/ScrollToTop";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -18,7 +19,8 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "DailyShipUI - Ship UIs with AI",
-  description: "30 days. 30 emails. Ship working UIs with AI prompts.",
+  description:
+    "A fresh challenge every morning. Become an AI-native designer in 30 days with DailyShipUI.",
 };
 
 export default function RootLayout({
@@ -33,6 +35,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <SmoothScroll />
+        <ScrollToTop />
         {children}
       </body>
     </html>

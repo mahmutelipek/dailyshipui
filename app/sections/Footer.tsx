@@ -33,15 +33,15 @@ export default function Footer() {
             id="footer-nav-hide"
             className="mx-auto flex w-full max-w-xl flex-col items-center justify-start text-center"
           >
-            <h2 className="mb-4 w-[300px] max-w-full font-serif max-[360px]:max-sm:text-[clamp(2.5rem,calc(9.375vw+0.5rem),6.5rem)] min-[361px]:max-sm:text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:w-full sm:max-w-[400px] sm:text-5xl md:text-[72px]">
-              Evolve your craft. Start building.
+            <h2 className="mb-4 w-[300px] max-w-full font-serif max-[360px]:max-sm:text-[clamp(2.5rem,calc(9.375vw+0.5rem),6.5rem)] min-[361px]:max-sm:text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:w-full sm:max-w-[520px] sm:text-5xl md:text-[72px] md:leading-[1.05]">
+              A fresh challenge every morning.
             </h2>
             <p className="mb-6 max-w-[300px] font-sans text-sm font-medium leading-relaxed text-[#00000080] sm:max-w-xl">
-              Join the 30-day sprint to build interactive, AI-driven interfaces today.
+              Join the daily sprint. Evolve your design craft and build the future today.
             </p>
             <Button type="button">Start Shipping</Button>
-            <p className="mt-4 text-center font-sans text-[13px] text-black/50">
-              $24.99 one-time payment. 30 days of challenges.
+            <p className="mt-4 max-w-md text-center font-sans text-[13px] leading-relaxed text-black/50">
+              $24.99 one-time payment. Secure checkout via Stripe.
             </p>
           </div>
         </div>
