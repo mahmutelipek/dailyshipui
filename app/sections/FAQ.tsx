@@ -7,28 +7,41 @@ import {
 
 const items = [
   {
-    question: "No code?",
+    question:
+      "I am a Figma veteran. Will I actually learn to build, or just chat with a bot?",
     answer:
-      "Zero code required. AI handles syntax, you handle vision.",
+      "You will learn the modern design-to-code pipeline. You are not just copy-pasting prompts. You will learn how to structure layout logic, debug visual errors, and command AI to write clean, production-ready code.",
   },
   {
-    question: "Tools?",
-    answer: "Just a laptop, Cursor, and Pencil.",
-  },
-  {
-    question: "Miss a day?",
+    question: "What tech stack are we actually using?",
     answer:
-      "The emails are yours forever. Catch up anytime.",
+      "React and Tailwind CSS—the absolute industry standard. You will generate code that real developers actually use, not just static prototypes or fake UI components.",
   },
   {
-    question: "Start date?",
-      answer:
-        "Your 30 day sprint starts the morning after you join.",
+    question: "Are there any hidden costs? Do I need paid AI accounts?",
+    answer:
+      "No. You can complete the entire 30-day sprint using the free tier of Cursor. No hidden API costs. Just bring your laptop and your design vision.",
+  },
+  {
+    question: "Is 30 minutes a day really enough to ship?",
+    answer:
+      "Yes. The prompt frameworks I provide do the heavy lifting for the initial build. Your 30 minutes are spent iterating, tweaking the visual hierarchy, and refining the UX. It is about daily momentum, not endless polishing.",
+  },
+  {
+    question:
+      "I do not know how to use the terminal or GitHub. Is that a problem?",
+    answer:
+      "Zero developer environment setup required. We keep it strictly in Cursor. You will see your UI live in the built-in browser immediately. No dev ops anxiety.",
+  },
+  {
+    question: "What if life gets in the way and I miss a day?",
+    answer:
+      "The emails and frameworks are yours forever. The daily streak is the goal, but you can always pause and catch up at your own pace.",
   },
   {
     question: "Why $24.99?",
-      answer:
-        "Low barrier to start, enough to keep you committed.",
+    answer:
+      "It is a low barrier to start today, but enough of a financial investment to keep you psychologically committed to finishing all 30 days.",
   },
 ];
 
