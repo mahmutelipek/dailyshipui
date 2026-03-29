@@ -27,12 +27,12 @@ export default function Hero() {
 
       {/* Image — mobile: mt-auto pins block to section bottom; sm+ centered stack */}
       <div className="flex w-full shrink-0 self-stretch justify-center max-sm:mt-auto max-sm:pb-0 sm:mt-0 sm:pb-0">
-        <div className="relative aspect-[16/10] max-h-[min(92vh,640px)] w-[150vw] max-w-none shrink-0 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
+        <div className="relative aspect-[16/10] w-[150vw] max-w-none shrink-0 max-sm:max-h-[min(138vh,960px)] sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
         <Image
           src="/herosectionbg.png"
           alt=""
           fill
-          className="object-contain max-sm:object-bottom sm:object-[center_bottom]"
+          className="object-contain object-[center_bottom]"
           priority
         />
         </div>
