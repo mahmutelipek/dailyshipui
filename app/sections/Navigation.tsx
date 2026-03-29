@@ -71,9 +71,9 @@ export default function Navigation() {
         <Image
           src="/icon.svg"
           alt=""
-          width={173}
-          height={80}
-          className="h-8 w-auto"
+          width={104}
+          height={48}
+          className="h-12 w-auto"
           priority
         />
       </Link>
