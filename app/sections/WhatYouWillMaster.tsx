@@ -50,11 +50,11 @@ export default function WhatYouWillMaster() {
   return (
     <section
       id="what-you-will-master"
-      className="w-full scroll-mt-[72px] bg-white py-24 sm:py-32"
+      className="w-full scroll-mt-[72px] bg-[#F3F3F3] py-24 sm:py-32"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="mb-12 text-center font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:mb-16 sm:text-5xl md:max-w-4xl md:mx-auto md:text-6xl md:leading-[1.08]">
-          What you will master
+          What you will master?
         </h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-x-14 md:gap-y-12">
           {items.map((item) => (

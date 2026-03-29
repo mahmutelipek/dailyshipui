@@ -24,7 +24,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="w-full py-32 bg-[#F3F3F3]">
+    <section className="w-full bg-white py-32">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="mb-16 text-center font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:text-5xl md:max-w-4xl md:mx-auto md:text-6xl md:leading-[1.08]">
           The daily rhythm
