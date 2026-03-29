@@ -29,7 +29,7 @@ export default function Navigation() {
         observer = new IntersectionObserver(
           ([entry]) => setFooterInView(entry.isIntersecting),
           {
-            // min(18vh, 220px) — API yalnızca px/% kabul eder; değer JS ile hesaplanır
+            // min(18vh, 220px); IntersectionObserver rootMargin accepts px/% only
             rootMargin: `0px 0px -${bottomInset}px 0px`,
             threshold: 0,
           }
@@ -83,7 +83,7 @@ export default function Navigation() {
           href="#how-it-works"
           className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
         >
-          Nasıl Çalışır?
+          How it works
         </Link>
         <Link
           href="#faq"
@@ -92,7 +92,7 @@ export default function Navigation() {
           FAQ
         </Link>
         <Button nativeButton={false} render={<Link href="#footer" />}>
-          Start Shipping
+          Start shipping
         </Button>
       </div>
     </nav>

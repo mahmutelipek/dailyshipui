@@ -1,23 +1,23 @@
 import { InboxIcon, SparklesIcon, RocketLaunchIcon } from "@heroicons/react/24/outline";
 
-/** The Daily Rhythm — parent `section#how-it-works` lives in `app/page.tsx`. */
+/** The daily rhythm — parent `section#how-it-works` lives in `app/page.tsx`. */
 export default function HowItWorks() {
   const steps = [
     {
       icon: InboxIcon,
-      title: "09:00 AM: The Daily Brief",
+      title: "09:00 AM: The daily brief",
       description:
         "Every single morning, a fresh UX problem and a prompt framework hit your inbox. No fluff, just your first mission of the day.",
     },
     {
       icon: SparklesIcon,
-      title: "The 30-Minute Execution",
+      title: "The 30-minute execution",
       description:
         "Open Cursor and Pencil. Use my frameworks to guide the AI, iterate, and refine every single pixel using just your words.",
     },
     {
       icon: RocketLaunchIcon,
-      title: "The Daily Ship",
+      title: "The daily ship",
       description:
         "By the time you finish your coffee, turn your vision into a live interface. Every day is a new build. Every day is a new superpower.",
     },
@@ -27,7 +27,7 @@ export default function HowItWorks() {
     <section className="w-full py-32 bg-[#F3F3F3]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="mb-16 text-center font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:text-5xl md:max-w-4xl md:mx-auto md:text-6xl md:leading-[1.08]">
-          The Daily Rhythm
+          The daily rhythm
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">

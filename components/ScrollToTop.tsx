@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 import { scrollToTopImmediate } from "@/lib/scroll-root";
 
-/** Route değişince ve ilk yüklemede scroll’u en üste alır; tarayıcı scroll restore’u kapatır. */
+/** Scroll to top on route change and first load; disables browser scroll restoration. */
 export default function ScrollToTop() {
   const pathname = usePathname();
 

@@ -6,7 +6,7 @@ export function registerLenis(instance: Lenis | null) {
   lenisRef = instance;
 }
 
-/** Lenis varsa anında en üste; yoksa native scroll. */
+/** Scroll to top immediately via Lenis when available, else native window scroll. */
 export function scrollToTopImmediate() {
   if (typeof window === "undefined") return;
   lenisRef?.scrollTo(0, { immediate: true });

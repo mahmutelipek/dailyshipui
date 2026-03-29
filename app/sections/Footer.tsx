@@ -6,8 +6,8 @@ import Image from "next/image";
 /** Full-viewport footer CTA + wordmark; `#footer-nav-hide` is observed by Navigation. */
 export default function Footer() {
   return (
-    <section className="relative isolate flex min-h-[min(100dvh,900px)] w-full flex-col overflow-hidden bg-[#F3F3F3] py-12 sm:py-16 md:min-h-[100dvh] md:h-[100dvh] md:py-0">
-      {/* Köşe PNG — wordmark SVG (z-12) üstünde */}
+    <section className="relative isolate flex min-h-[min(100dvh,900px)] w-full flex-col overflow-hidden bg-[#F3F3F3] pt-12 pb-0 sm:pt-16 sm:pb-0 md:min-h-[100dvh] md:h-[100dvh] md:py-0">
+      {/* Corner PNGs — above wordmark SVG (z-12) */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-[14] h-[120px] w-[min(52vw,200px)] sm:h-[140px] sm:w-[200px] md:h-[185px] md:w-[260px] lg:h-[210px] lg:w-[300px] xl:h-[243px] xl:w-[344px]">
         <Image
           src="/footerv2.png"
@@ -26,7 +26,7 @@ export default function Footer() {
         />
       </div>
 
-      {/* CTA: flex-1 içinde dikey ortalı; alt wordmark akışta — SVG üstüne binmez */}
+      {/* CTA: vertically centered in flex-1; wordmark below in flow */}
       <div className="relative z-10 flex w-full min-h-0 flex-1 flex-col px-4 pt-20 sm:pt-24 md:pt-28">
         <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center">
           <div
@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="mb-6 max-w-[300px] font-sans text-sm font-medium leading-relaxed text-[#00000080] sm:max-w-xl">
               Join the daily sprint. Evolve your design craft and build the future today.
             </p>
-            <Button type="button">Start Shipping</Button>
+            <Button type="button">Start shipping</Button>
             <p className="mt-4 max-w-md text-center font-sans text-[13px] leading-relaxed text-black/50">
               $24.99 one-time payment. Secure checkout via Stripe.
             </p>
@@ -47,12 +47,12 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Wordmark — köşe PNG (z-14) altında */}
-      <div className="relative z-[12] mt-auto w-full shrink-0 leading-none select-none">
+      {/* Wordmark — full width, flush to section bottom */}
+      <div className="relative z-[12] mt-auto w-full max-w-none shrink-0 select-none leading-[0]">
         <svg
           viewBox="0 0 1440 450"
           preserveAspectRatio="xMidYMax meet"
-          className="block w-full h-auto [vertical-align:bottom]"
+          className="block h-auto w-full align-bottom [-webkit-margin-after:-1px] [margin-block-end:-1px]"
           aria-hidden
         >
           <g>

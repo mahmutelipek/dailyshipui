@@ -19,14 +19,14 @@ export default function Hero() {
         </p>
 
         <Button nativeButton={false} render={<Link href="#footer" />}>
-          Start Shipping
+          Start shipping
         </Button>
         <p className="mt-4 max-w-md font-sans text-[13px] leading-relaxed text-black/50">
           $24.99 one-time payment. Secure checkout via Stripe.
         </p>
       </div>
 
-      {/* Image — mobil: 150vw, üst sarmalayıcı flex ile tam ortada; sm+ aynı max-w */}
+      {/* Image — mobile 150vw centered via flex; sm+ same max width */}
       <div className="flex w-full shrink-0 self-stretch justify-center">
         <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none shrink-0 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
         <Image

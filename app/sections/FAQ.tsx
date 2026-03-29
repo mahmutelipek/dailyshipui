@@ -19,7 +19,7 @@ const items = [
   {
     question: "Is this for beginners or pro designers?",
     answer:
-      "Both. If you’re a pro, you’ll 10x your speed. If you’re a beginner, you’ll bypass the \"static\" era and go straight to building interactive products.",
+      'Both. If you’re a pro, you’ll 10x your speed. If you’re a beginner, you’ll bypass the "static" era and go straight to building interactive products.',
   },
   {
     question: "What if I miss a day?",
