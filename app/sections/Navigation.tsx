@@ -69,10 +69,10 @@ export default function Navigation() {
         }}
       >
         <Image
-          src="/logo.svg"
+          src="/icon.svg"
           alt=""
-          width={200}
-          height={32}
+          width={173}
+          height={80}
           className="h-8 w-auto"
           priority
         />
