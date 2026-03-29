@@ -4,9 +4,13 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-/** Footer row: typography + hover (default text color from parent `nav` or per-link). */
+/** Footer links: muted + hover to full black. */
 const footerNavLinkClass =
   "whitespace-nowrap font-sans text-[11px] font-medium transition-colors hover:text-[#1A1A1A] sm:text-[13px]";
+
+/** Copyright line — same scale as links, no hover (not interactive). */
+const footerCopyrightClass =
+  "whitespace-nowrap font-sans text-[11px] font-medium sm:text-[13px] text-[rgba(26,26,26,0.5)]";
 
 /** Full-viewport footer CTA + wordmark; `#footer-nav-hide` is observed by Navigation. */
 export default function Footer() {
@@ -53,9 +57,7 @@ export default function Footer() {
       </div>
 
       <div className="relative z-20 mt-6 mb-12 sm:mt-8 sm:mb-16 lg:-my-[64px] flex w-full flex-col items-center gap-y-3 px-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:gap-x-4 sm:gap-y-2 sm:px-8 lg:px-4 xl:px-6">
-        <p
-          className={`text-center sm:text-left ${footerNavLinkClass} text-[rgba(26,26,26,0.5)]`}
-        >
+        <p className={`text-center sm:text-left ${footerCopyrightClass}`}>
           © 2026 DailyShipUI. All rights reserved.
         </p>
         <nav
