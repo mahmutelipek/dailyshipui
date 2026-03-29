@@ -3,5 +3,12 @@
   "framework": null,
   "installCommand": "npm ci",
   "buildCommand": "npm run build",
-  "outputDirectory": "out"
+  "outputDirectory": "out",
+  "redirects": [
+    {
+      "source": "/v=4",
+      "destination": "/opengraph-v4.png",
+      "permanent": false
+    }
+  ]
 }
