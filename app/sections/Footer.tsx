@@ -2,6 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
+
+/** Footer row: typography + hover (default text color from parent `nav` or per-link). */
+const footerNavLinkClass =
+  "whitespace-nowrap font-sans text-[11px] font-medium transition-colors hover:text-[#1A1A1A] sm:text-[13px]";
 
 /** Full-viewport footer CTA + wordmark; `#footer-nav-hide` is observed by Navigation. */
 export default function Footer() {
@@ -26,7 +31,7 @@ export default function Footer() {
         />
       </div>
 
-      {/* CTA: vertically centered in flex-1; wordmark below in flow */}
+      {/* CTA: vertically centered in flex-1; legal row after; wordmark below in flow */}
       <div className="relative z-10 flex w-full min-h-0 flex-1 flex-col px-4 pt-20 sm:pt-24 md:pt-28">
         <div className="flex w-full min-h-0 flex-1 flex-col items-center justify-center">
           <div
@@ -45,6 +50,37 @@ export default function Footer() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="relative z-20 mt-6 mb-12 sm:mt-8 sm:mb-16 lg:-my-[64px] flex w-full flex-col items-center gap-y-3 px-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between sm:gap-x-4 sm:gap-y-2 sm:px-8 lg:px-4 xl:px-6">
+        <p
+          className={`text-center sm:text-left ${footerNavLinkClass} text-[rgba(26,26,26,0.5)]`}
+        >
+          © 2026 DailyShipUI. All rights reserved.
+        </p>
+        <nav
+          className="flex max-w-full flex-nowrap items-center justify-center gap-3 text-[rgba(10,10,10,0.5)] sm:justify-end sm:ml-auto"
+          aria-label="Legal and contact"
+        >
+          <Link
+            href="/privacy"
+            className={`${footerNavLinkClass} text-[rgba(26,26,26,0.5)]`}
+          >
+            Privacy Policy
+          </Link>
+          <Link
+            href="/terms"
+            className={`${footerNavLinkClass} text-[rgba(26,26,26,0.5)]`}
+          >
+            Terms of Service
+          </Link>
+          <a
+            href="mailto:contact@dailyshipui.com"
+            className={`${footerNavLinkClass} text-[rgba(26,26,26,0.5)]`}
+          >
+            Contact
+          </a>
+        </nav>
       </div>
 
       {/* Wordmark — full width, flush to section bottom */}

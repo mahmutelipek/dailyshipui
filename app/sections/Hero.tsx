@@ -26,7 +26,7 @@ export default function Hero() {
       {/* Content */}
       <div
         ref={heroCopyRef}
-        className="mx-auto mb-8 mt-16 flex max-w-4xl shrink-0 flex-col items-center px-4 text-center sm:px-6 lg:px-8"
+        className="mx-auto mb-8 mt-16 flex max-w-4xl shrink-0 flex-col items-center gap-2 px-4 text-center max-sm:min-h-0 sm:min-h-[266px] sm:px-6 lg:px-8"
       >
         <motion.div
           className="w-full"
