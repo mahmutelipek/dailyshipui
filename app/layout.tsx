@@ -45,7 +45,7 @@ const siteDescription =
 const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
 
 /** Twitter önbelleğini kırmak için (dosya aynı; sunucu query’yi yok sayar). */
-const OG_CACHE_BUST = "v=3";
+const OG_CACHE_BUST = "v=4";
 
 const ogImageUrl = (() => {
   const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
