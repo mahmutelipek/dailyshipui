@@ -51,7 +51,7 @@ export default function FAQ() {
         <Accordion className="w-full" defaultValue={["faq-0"]}>
           {items.map((item, i) => (
             <AccordionItem key={item.question} value={`faq-${i}`}>
-              <AccordionTrigger className="py-4 text-left text-base font-medium text-[#1A1A1A] hover:no-underline">
+              <AccordionTrigger className="py-4 text-left text-base font-medium text-[#1A1A1A] hover:no-underline sm:text-[17px]">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent>

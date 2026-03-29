@@ -12,6 +12,7 @@ export default function Home() {
       <section id="how-it-works" className="scroll-mt-[72px]">
         <HowItWorks />
       </section>
+      {/* FAQ section uses id="faq" in app/sections/FAQ.tsx (nav link target) */}
       <FAQ />
       <section id="footer" className="scroll-mt-[72px]">
         <Footer />
