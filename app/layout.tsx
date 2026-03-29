@@ -17,45 +17,58 @@ const instrumentSerif = Instrument_Serif({
   display: "swap",
 });
 
-function metadataBaseUrl() {
-  const fromEnv = process.env.NEXT_PUBLIC_SITE_URL;
-  if (fromEnv) return new URL(fromEnv);
-  if (process.env.VERCEL_URL)
-    return new URL(`https://${process.env.VERCEL_URL}`);
-  return new URL("http://localhost:3000");
+/**
+ * Apex → www 307 veriyorsa OG crawler’lar görseli çoğu zaman alamaz; doğrudan
+ * canonical host’u kullan. Farklı domain için NEXT_PUBLIC_SITE_URL ayarla.
+ */
+const FALLBACK_ORIGIN_PRODUCTION = "https://www.dailyshipui.com";
+
+function resolvedOrigin(): string {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (raw) {
+    const withProto = /^https?:\/\//i.test(raw) ? raw : `https://${raw}`;
+    return new URL(withProto).origin;
+  }
+  if (process.env.NODE_ENV === "production") {
+    return new URL(FALLBACK_ORIGIN_PRODUCTION).origin;
+  }
+  return "http://localhost:3000";
 }
+
+const siteOrigin = resolvedOrigin();
 
 const siteTitle = "DailyShipUI - Ship UIs with AI";
 const siteDescription =
   "A fresh challenge every morning. Become an AI-native designer in 30 days with DailyShipUI.";
 
+const ogImageAlt = "DailyShipUI — The 30 day AI design challenge";
+
+const ogImageUrl = (() => {
+  const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
+  if (cdn) return /^https?:\/\//i.test(cdn) ? cdn : `https://${cdn}`;
+  return `${siteOrigin}/opengraph.png`;
+})();
+
+const canonicalUrl = `${siteOrigin}/`;
+
+/** Relative URL’ler (favicon) için; OG ayrıca aşağıda elle yazılıyor. */
+const metadataBase = new URL(
+  siteOrigin === "http://localhost:3000"
+    ? "http://localhost:3000/"
+    : `${siteOrigin}/`
+);
+
+/**
+ * openGraph / twitter burada YOK: `output: "export"` + Metadata API ile LinkedIn /
+ * WhatsApp bazen yanlış veya eksik etiket üretiyor. Aşağıdaki <head> tek kaynak.
+ */
 export const metadata: Metadata = {
-  metadataBase: metadataBaseUrl(),
+  metadataBase,
   title: siteTitle,
   description: siteDescription,
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
     shortcut: "/favicon.svg",
-  },
-  openGraph: {
-    title: siteTitle,
-    description: siteDescription,
-    type: "website",
-    locale: "en_US",
-    images: [
-      {
-        url: "/OG.png",
-        width: 2400,
-        height: 1260,
-        alt: "DailyShipUI — The 30 day AI design challenge",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteTitle,
-    description: siteDescription,
-    images: ["/OG.png"],
   },
 };
 
@@ -69,6 +82,26 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}
     >
+      <head>
+        <link rel="canonical" href={canonicalUrl} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="DailyShipUI" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalUrl} />
+        <meta property="og:title" content={siteTitle} />
+        <meta property="og:description" content={siteDescription} />
+        <meta property="og:image" content={ogImageUrl} />
+        <meta property="og:image:secure_url" content={ogImageUrl} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2400" />
+        <meta property="og:image:height" content="1260" />
+        <meta property="og:image:alt" content={ogImageAlt} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={siteTitle} />
+        <meta name="twitter:description" content={siteDescription} />
+        <meta name="twitter:image" content={ogImageUrl} />
+        <meta name="twitter:image:alt" content={ogImageAlt} />
+      </head>
       <body className="min-h-full flex flex-col">
         <SmoothScroll />
         <ScrollToTop />
