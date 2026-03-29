@@ -63,19 +63,7 @@ export default function Navigation() {
         />
       </Link>
 
-      <div className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-6 lg:gap-8">
-        <Link
-          href="#how-it-works"
-          className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
-        >
-          Nasıl Çalışır?
-        </Link>
-        <Link
-          href="#faq"
-          className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
-        >
-          FAQ
-        </Link>
+      <div className="flex shrink-0 items-center">
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start Shipping
         </Button>

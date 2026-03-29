@@ -45,13 +45,13 @@ export default function FAQ() {
       className="w-full scroll-mt-[72px] bg-white py-24 sm:py-32"
     >
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mb-12 text-center font-serif text-4xl font-normal tracking-[-0.02em] text-[#1A1A1A] sm:mb-16 sm:text-5xl md:text-6xl">
+        <h2 className="mb-12 text-center font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:mb-16 sm:text-5xl md:text-6xl">
           FAQ
         </h2>
-        <Accordion className="w-full">
+        <Accordion className="w-full" defaultValue={["faq-0"]}>
           {items.map((item, i) => (
             <AccordionItem key={item.question} value={`faq-${i}`}>
-              <AccordionTrigger className="py-4 text-left text-base font-medium text-[#1A1A1A] hover:no-underline sm:text-[17px]">
+              <AccordionTrigger className="py-4 text-left text-base font-medium text-[#1A1A1A] hover:no-underline">
                 {item.question}
               </AccordionTrigger>
               <AccordionContent>

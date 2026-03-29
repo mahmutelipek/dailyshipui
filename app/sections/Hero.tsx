@@ -20,7 +20,7 @@ export default function Hero() {
         <Button nativeButton={false} render={<Link href="#footer" />}>
           Start Shipping
         </Button>
-        <p className="mt-4 font-sans text-[13px] text-[#64748B]">
+        <p className="mt-4 font-sans text-[13px] text-black/50">
           $24.99 one-time payment. 30 days of challenges.
         </p>
       </div>
