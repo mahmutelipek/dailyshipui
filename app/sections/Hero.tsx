@@ -22,7 +22,7 @@ export default function Hero() {
           Start Shipping
         </Button>
         <p className="mt-4 max-w-md font-sans text-[13px] leading-relaxed text-black/50">
-          $24.99 one-time payment. Your first brief arrives tomorrow at 09:00 AM.
+          $24.99 one-time payment. Secure checkout via Stripe.
         </p>
       </div>
 
