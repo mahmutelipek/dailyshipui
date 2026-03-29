@@ -5,9 +5,9 @@ export default function HowItWorks() {
   const steps = [
     {
       icon: InboxIcon,
-      title: "09:00 AM: The brief",
+      title: "The brief",
       description:
-        "A fresh UX problem and prompt framework in your inbox every morning.",
+        "A fresh UX problem and prompt framework in your inbox every morning at 09:00 AM.",
     },
     {
       icon: SparklesIcon,

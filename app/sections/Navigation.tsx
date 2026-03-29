@@ -74,9 +74,9 @@ export default function Navigation() {
         <Image
           src={NAV_LOGO}
           alt=""
-          width={128}
-          height={48}
-          className="h-12 w-auto"
+          width={117}
+          height={44}
+          className="h-11 w-auto"
           priority
         />
       </Link>

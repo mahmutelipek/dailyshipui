@@ -7,41 +7,34 @@ import {
 
 const items = [
   {
-    question:
-      "I am a Figma veteran. Will I actually learn to build or just chat with a bot?",
+    question: "I am a designer. Will I actually design or just type text?",
     answer:
-      "You will learn the modern design to code pipeline. You are not just copy pasting prompts. You will learn how to structure layout logic, debug visual errors, and command AI to write clean production ready code.",
+      "You will still design, but your primary tool is now language. You remain in full control of visual hierarchy, spacing, and typography. The AI simply translates your creative vision into a live and clickable interface.",
   },
   {
-    question: "What tech stack are we actually using?",
+    question: "Do I need to learn how to code?",
     answer:
-      "React and Tailwind CSS. The absolute industry standard. You will generate code that real developers actually use, not just static prototypes or fake UI components.",
+      "Absolutely not. You will not write a single line of code. You will act as the creative director. The AI handles all the complex syntax while you focus on the user experience.",
   },
   {
-    question: "Are there any hidden costs? Do I need paid AI accounts?",
+    question: "What tools do I need to start?",
     answer:
-      "No. You can complete the entire 30 day sprint using the free tier of Cursor. No hidden API costs. Just bring your laptop and your design vision.",
+      "Just your laptop and a free Cursor account. We skip all the complex developer setups. You will see your designs come to life instantly in a preview window.",
   },
   {
-    question: "Is 30 minutes a day really enough to ship?",
+    question: "I feel like I missed the AI wave. Is it too late?",
     answer:
-      "Yes. The prompt frameworks I provide do the heavy lifting for the initial build. Your 30 minutes are spent iterating, tweaking the visual hierarchy, and refining the UX. It is about daily momentum, not endless polishing.",
+      "You are here because you see other designers shipping real products while you are still on a static canvas. You have been saying you need to look into AI for months. It is not too late, but the gap is widening. This sprint is the aggressive push you need to catch up and dominate the new workflow.",
   },
   {
-    question:
-      "I do not know how to use the terminal or GitHub. Is that a problem?",
+    question: "What if I miss a day?",
     answer:
-      "Zero developer environment setup required. We keep it strictly in Cursor. You will see your UI live in the built in browser immediately. No dev ops anxiety.",
+      "The emails do not stop. They hit your inbox every single morning. There is no pause button. If you fall behind, the briefs will simply wait for you in your inbox. But let us be real: the daily pressure is exactly why this works. Stop procrastinating and let the daily momentum force you to evolve.",
   },
   {
-    question: "What if life gets in the way and I miss a day?",
+    question: "Why is it $24.99?",
     answer:
-      "The emails and frameworks are yours forever. The daily streak is the goal, but you can always pause and catch up at your own pace.",
-  },
-  {
-    question: "Why $24.99?",
-    answer:
-      "It is a low barrier to start today, but enough of an investment to keep you committed to finishing all 30 days.",
+      "It is a low barrier to start today, but enough of a financial investment to keep you psychologically committed to finishing the full 30 days.",
   },
 ];
 
@@ -56,9 +49,6 @@ export default function FAQ() {
           <h2 className="font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-normal tracking-[-0.02em] text-[#1A1A1A] max-sm:leading-[1.05] sm:text-5xl md:mx-auto md:max-w-4xl md:text-6xl md:leading-[1.08]">
             FAQ
           </h2>
-          <p className="mt-3 font-sans text-sm font-medium text-[#666666] sm:mt-4 sm:text-base">
-            The Reality Check
-          </p>
         </div>
         <Accordion className="w-full" defaultValue={["faq-0"]}>
           {items.map((item, i) => (
