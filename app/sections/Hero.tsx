@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-72px)] w-full flex-col items-center justify-center bg-[#F3F3F3] px-4 py-12 sm:px-8 sm:py-16 md:py-20 lg:px-16 lg:pb-24 lg:pt-32">
+    <section className="relative flex min-h-[calc(100dvh-72px)] w-full flex-col items-center justify-center bg-[#F3F3F3] px-4 pt-12 pb-0 max-sm:min-h-[calc(100dvh-72px+4rem)] sm:px-8 sm:py-16 md:py-20 lg:px-16 lg:pb-24 lg:pt-32">
       {/* Content */}
       <div className="mx-auto mb-8 mt-16 flex max-w-4xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
         <h1 className="mx-auto mb-4 max-w-[18ch] font-serif text-[clamp(2.5rem,9vw+0.5rem,6.5rem)] font-medium leading-[1.05] tracking-[-0.02em] text-black sm:mb-6">
@@ -26,8 +26,8 @@ export default function Hero() {
       </div>
 
       {/* Image — mobile: nudge up (bleeds toward top); sm+ unchanged */}
-      <div className="flex w-full shrink-0 self-stretch justify-center max-sm:-mt-10 max-sm:pb-1 sm:mt-0 sm:pb-0">
-        <div className="relative aspect-[16/10] max-h-[84.375vh] w-[150vw] max-w-none shrink-0 max-sm:-translate-y-3 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh] sm:translate-y-0">
+      <div className="flex w-full shrink-0 self-stretch justify-center max-sm:-mt-10 max-sm:pb-0 sm:mt-0 sm:pb-0">
+        <div className="relative aspect-[16/10] max-h-[min(92vh,640px)] w-[150vw] max-w-none shrink-0 max-sm:-translate-y-3 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh] sm:translate-y-0">
         <Image
           src="/herosectionbg.png"
           alt=""
