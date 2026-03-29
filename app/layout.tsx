@@ -45,10 +45,10 @@ const siteDescription =
 const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
 
 /**
- * Sorgu dizesi (?v=…) bazı uygulama içi tarayıcılarda 404 gibi davranabiliyor.
- * Sürümü yolda tutuyoruz; görseli güncelleyince `public/og/v5.png` + bu sabiti artır.
+ * Sorgu (?v) ve `/og/…` yolu bazı ortamlarda sorun çıkarıyor (engelleyici / istemci yönlendirme).
+ * Kökte açık isim: güncelleyince `public/opengraph-v5.png` ekle ve yolu değiştir.
  */
-const OG_IMAGE_VERSION_PATH = "/og/v4.png";
+const OG_IMAGE_VERSION_PATH = "/opengraph-v4.png";
 
 const ogImageUrl = (() => {
   const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
