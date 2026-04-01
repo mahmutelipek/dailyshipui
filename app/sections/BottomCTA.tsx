@@ -66,7 +66,7 @@ export default function BottomCTA() {
             </Button>
           </div>
           <FieldDescription className="text-center text-[13px] text-[#64748B] font-sans">
-            $24.99 one-time payment. 30 days of challenges.
+            $24.99 one time payment. Secure checkout via Stripe.
           </FieldDescription>
         </Field>
       </div>

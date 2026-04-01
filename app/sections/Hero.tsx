@@ -51,7 +51,7 @@ export default function Hero() {
           animate={{ opacity: fadeOpacity }}
           transition={heroFadeTransition}
         >
-          30 days. 30 challenges. Become an AI native designer.
+          30 days. 30 challenges. Become an AI-native designer.
         </motion.p>
 
         <motion.div

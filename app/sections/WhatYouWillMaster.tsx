@@ -1,48 +1,48 @@
 import {
+  PaintBrushIcon,
   ChatBubbleBottomCenterTextIcon,
-  BoltIcon,
-  ArrowPathIcon,
   PuzzlePieceIcon,
+  ArrowPathIcon,
   RocketLaunchIcon,
   RectangleStackIcon,
 } from "@heroicons/react/24/outline";
 
 const items = [
   {
+    icon: PaintBrushIcon,
+    title: "Art Direction",
+    description:
+      "Learn to direct AI the way a senior designer directs a junior — with precision, intent, and an eye for what is missing.",
+  },
+  {
     icon: ChatBubbleBottomCenterTextIcon,
-    title: "Prompt engineering",
+    title: "Prompt Engineering",
     description:
-      "Command AI to build complex visual hierarchies.",
-  },
-  {
-    icon: BoltIcon,
-    title: "Rapid prototyping",
-    description:
-      "Ideas to functional interfaces in minutes.",
-  },
-  {
-    icon: ArrowPathIcon,
-    title: "AI native workflow",
-    description:
-      "Master the design to live code loop.",
+      "Write instructions that produce consistent, professional-quality UI. Vague prompts produce vague results. You will stop writing vague prompts.",
   },
   {
     icon: PuzzlePieceIcon,
-    title: "Real world UX",
+    title: "Real-World UX",
     description:
-      "Solve 30 actual product challenges.",
+      "Solve 30 actual product challenges: login flows, error states, empty states, pricing tables, date pickers, form inputs, and more. Problems that appear in every product you will ever work on.",
+  },
+  {
+    icon: ArrowPathIcon,
+    title: "AI-Native Workflow",
+    description:
+      "Master the loop: describe in Pencil, build in Cursor, review in the browser, iterate. By Day 30 this will feel like second nature.",
   },
   {
     icon: RocketLaunchIcon,
-    title: "The ship mindset",
+    title: "The Ship Mindset",
     description:
-      "Build the discipline of daily execution.",
+      "Daily execution is a skill. Thirty consecutive days of shipping something real builds the kind of discipline that separates people who talk about design from people who do it.",
   },
   {
     icon: RectangleStackIcon,
-    title: "Live portfolio",
+    title: "Live Portfolio",
     description:
-      "30 interactive, AI built interfaces by Day 30.",
+      "30 interactive, AI-directed interfaces. Built and directed by you. Ready to show.",
   },
 ];
 

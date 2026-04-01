@@ -46,7 +46,7 @@ export default function Footer() {
               A fresh challenge every morning.
             </h2>
             <p className="mb-6 max-w-[300px] font-sans text-sm font-medium leading-relaxed text-[#00000080] sm:max-w-xl">
-              Join the daily sprint and build the future today.
+              30 days. One real skill. Start today.
             </p>
             <Button type="button">Start shipping</Button>
           </div>

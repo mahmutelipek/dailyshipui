@@ -5,21 +5,21 @@ export default function HowItWorks() {
   const steps = [
     {
       icon: InboxIcon,
-      title: "The brief",
+      title: "The Brief",
       description:
-        "A fresh UX problem and prompt framework in your inbox every morning at 09:00 AM.",
+        "A fresh UX problem lands in your inbox every morning. The first 10 days, you get everything: a foundation prompt and an art direction prompt. After that, you write your own.",
     },
     {
       icon: SparklesIcon,
-      title: "The execution",
+      title: "The Execution",
       description:
-        "Open Cursor and Pencil. Build and refine every pixel using just your words.",
+        "Open Cursor. Launch Pencil. Direct the AI with precise language until the interface matches your vision. No code. Just direction.",
     },
     {
       icon: RocketLaunchIcon,
-      title: "The ship",
+      title: "The Ship",
       description:
-        "Turn your vision into a live interface before your coffee gets cold.",
+        "Your browser renders a live, interactive prototype with hover states, animations, and real interactions. That is your output for the day.",
     },
   ];
 
@@ -37,7 +37,7 @@ export default function HowItWorks() {
               <h3 className="font-sans text-[18px] font-medium leading-snug text-[#1A1A1A] sm:leading-normal">
                 {step.title}
               </h3>
-              <p className="font-sans text-sm font-medium leading-relaxed text-[#666666] max-w-xs">
+              <p className="mx-auto max-w-md font-sans text-sm font-medium leading-relaxed text-[#666666] md:max-w-none">
                 {step.description}
               </p>
             </div>

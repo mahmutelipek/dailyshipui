@@ -7,34 +7,44 @@ import {
 
 const items = [
   {
-    question: "I am a designer. Will I actually design or just type text?",
+    question: "I am a designer. Will I actually design?",
     answer:
-      "You will still design, but your primary tool is now language. You remain in full control of visual hierarchy, spacing, and typography. The AI simply translates your creative vision into a live and clickable interface.",
+      "More intentionally than before. Your tool shifts from a mouse to language, which means every decision has to be explicit. You cannot drag something \"a little to the left.\" You have to know why it should be left, by how much, and what it communicates. That precision is what this challenge trains.",
   },
   {
-    question: "Do I need to learn how to code?",
+    question: "I am not a designer. Can I do this?",
     answer:
-      "Absolutely not. You will not write a single line of code. You will act as the creative director. The AI handles all the complex syntax while you focus on the user experience.",
+      "Yes, and you might get more out of it than someone who is. You are not unlearning old habits. You are building the right ones from day one. The challenge does not assume design knowledge — it builds design thinking through daily practice. By Day 10 you will understand why login screens fail. By Day 20 you will know how to fix them.",
   },
   {
-    question: "What tools do I need to start?",
+    question: "Do I need to know how to code?",
     answer:
-      "Just your laptop and a free Cursor account. We skip all the complex developer setups. You will see your designs come to life instantly in a preview window.",
+      "No. Cursor is your workspace but you will not write a single line of code inside it. Pencil generates the design, Cursor builds it, your browser shows it live with real hover states and animations. Your job is to direct the output, not produce it.",
   },
   {
-    question: "I feel like I missed the AI wave. Is it too late?",
+    question: "What tools do I need?",
     answer:
-      "You are here because you see other designers shipping real products while you are still on a static canvas. You have been saying you need to look into AI for months. It is not too late, but the gap is widening. This sprint is the aggressive push you need to catch up and dominate the new workflow.",
+      "Cursor and the Pencil extension. Both are available today. No design software license, no local server setup, no terminal commands. If you can download an app and follow three steps, you are ready.",
+  },
+  {
+    question: "What exactly lands in my inbox each day?",
+    answer:
+      "A UX problem, the component you are building, and — for the first 20 days — structured prompts to guide your direction. The prompts gradually disappear as you progress. By Day 21 you are writing everything yourself. That is intentional. The goal is not to follow instructions forever. It is to not need them.",
   },
   {
     question: "What if I miss a day?",
     answer:
-      "The emails do not stop. They hit your inbox every single morning. There is no pause button. If you fall behind, the briefs will simply wait for you in your inbox. But let us be real: the daily pressure is exactly why this works. Stop procrastinating and let the daily momentum force you to evolve.",
+      "The emails are yours to keep. Pick up where you left off. The only thing that resets is the streak, and streaks are rebuilt one day at a time. Missing one day is not failure. Deciding not to continue is.",
   },
   {
-    question: "Why is it $24.99?",
+    question: "What do I have at the end of Day 30?",
     answer:
-      "It is a low barrier to start today, but enough of a financial investment to keep you psychologically committed to finishing the full 30 days.",
+      "30 live, interactive interfaces — real components that run in a browser, not static mockups. A habit of daily execution. And a way of thinking about UX problems that does not go away when the challenge ends.",
+  },
+  {
+    question: "Why $24.99?",
+    answer:
+      "One payment. No subscription. 30 days of structured practice, a real AI-native workflow, and a portfolio you can show. The math is straightforward.",
   },
 ];
 
