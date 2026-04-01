@@ -46,9 +46,9 @@ const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
 
 /**
  * Sorgu (?v) ve `/og/…` yolu bazı ortamlarda sorun çıkarıyor (engelleyici / istemci yönlendirme).
- * Kökte açık isim: güncelleyince `public/opengraph-v5.png` ekle ve yolu değiştir.
+ * Görseli güncelleyince `public/images/og/opengraph-v5.png` ekle ve yolu değiştir.
  */
-const OG_IMAGE_VERSION_PATH = "/opengraph-v4.png";
+const OG_IMAGE_VERSION_PATH = "/images/og/opengraph-v4.png";
 
 const ogImageUrl = (() => {
   const cdn = process.env.NEXT_PUBLIC_OG_IMAGE_URL?.trim();
@@ -80,8 +80,8 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-    shortcut: "/favicon.svg",
+    icon: [{ url: "/icons/favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/icons/favicon.svg",
   },
 };
 

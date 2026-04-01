@@ -78,7 +78,7 @@ export default function Hero() {
       <div className="flex w-full min-h-0 max-sm:flex-1 max-sm:flex-col max-sm:justify-end sm:shrink-0 self-stretch justify-center sm:mt-0 sm:pb-0">
         <div className="relative mx-auto h-full min-h-0 w-full max-w-none max-sm:max-h-full sm:aspect-[16/10] sm:h-auto sm:min-h-0 sm:w-full sm:max-w-[1470px] sm:max-h-[45vh]">
         <Image
-          src="/herosectionbg.png"
+          src="/images/hero/herosectionbg.png"
           alt=""
           fill
           sizes="100vw"

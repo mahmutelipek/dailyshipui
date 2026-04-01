@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { scrollToTopImmediate } from "@/lib/scroll-root";
 
-/** Bump `?v=` when replacing `public/icon.svg` so CDN/browser skip stale cache. */
-const NAV_LOGO = "/icon.svg?v=4";
+/** Bump `?v=` when replacing `public/icons/icon.svg` so CDN/browser skip stale cache. */
+const NAV_LOGO = "/icons/icon.svg?v=4";
 
 export default function Navigation() {
   const router = useRouter();

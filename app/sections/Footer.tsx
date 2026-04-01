@@ -19,7 +19,7 @@ export default function Footer() {
       {/* Corner PNGs — above wordmark SVG (z-12) */}
       <div className="pointer-events-none absolute bottom-0 left-0 z-[14] h-[120px] w-[min(52vw,200px)] sm:h-[140px] sm:w-[200px] md:h-[185px] md:w-[260px] lg:h-[210px] lg:w-[300px] xl:h-[243px] xl:w-[344px]">
         <Image
-          src="/footerv2.png"
+          src="/images/footer/footerv2.png"
           alt=""
           fill
           unoptimized
@@ -28,7 +28,7 @@ export default function Footer() {
       </div>
       <div className="pointer-events-none absolute bottom-0 right-0 z-[14] h-[min(38vw,200px)] w-[min(72vw,280px)] sm:h-[200px] sm:w-[280px] md:h-[255px] md:w-[360px] lg:h-[295px] lg:w-[420px] xl:h-[336px] xl:w-[476px]">
         <Image
-          src="/footer.png"
+          src="/images/footer/footer.png"
           alt=""
           fill
           className="object-contain object-right-bottom"
