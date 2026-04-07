@@ -39,7 +39,7 @@ const siteOrigin = resolvedOrigin();
 
 const siteTitle = "DailyShipUI - Ship UIs with AI";
 const siteDescription =
-  "30 days. 30 challenges. Become an AI-native designer. A fresh challenge every morning.";
+  "30 days. 30 UI challenges. Build real AI-native design skills. A fresh challenge every morning.";
 
 /** ASCII; bazı crawler’lar fancy tirede takılabiliyor. */
 const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";

@@ -5,19 +5,19 @@ export default function HowItWorks() {
   const steps = [
     {
       icon: InboxIcon,
-      title: "The Brief",
+      title: "The brief",
       description:
         "A fresh UX problem lands in your inbox every morning. The first 10 days, you get everything: a foundation prompt and an art direction prompt. After that, you write your own.",
     },
     {
       icon: SparklesIcon,
-      title: "The Execution",
+      title: "The execution",
       description:
-        "Open Cursor. Launch Pencil. Direct the AI with precise language until the interface matches your vision. No code. Just direction.",
+        "Open your `.pen` file in Cursor. Type your prompt in the Cursor chat, watch the design appear on the Pencil canvas inside your IDE. When it looks right, tell Cursor to build it. No code. Just direction.",
     },
     {
       icon: RocketLaunchIcon,
-      title: "The Ship",
+      title: "The ship",
       description:
         "Your browser renders a live, interactive prototype with hover states, animations, and real interactions. That is your output for the day.",
     },

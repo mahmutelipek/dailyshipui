@@ -58,7 +58,7 @@ export default function Footer() {
           © 2026 DailyShipUI. All rights reserved.
         </p>
         <nav
-          className="flex max-w-full flex-nowrap items-center justify-center gap-3 text-[rgba(10,10,10,0.5)] sm:justify-end sm:ml-auto"
+          className="flex max-w-full flex-nowrap items-center justify-center gap-4 text-[rgba(10,10,10,0.5)] sm:justify-end sm:ml-auto"
           aria-label="Legal and contact"
         >
           <Link

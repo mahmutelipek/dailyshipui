@@ -14,22 +14,22 @@ const items = [
   {
     question: "I am not a designer. Can I do this?",
     answer:
-      "Yes, and you might get more out of it than someone who is. You are not unlearning old habits. You are building the right ones from day one. The challenge does not assume design knowledge — it builds design thinking through daily practice. By Day 10 you will understand why login screens fail. By Day 20 you will know how to fix them.",
+      "Yes, and you might get more out of it than someone who is. You are not unlearning old habits. You are building the right ones from day one. The challenge does not assume design knowledge. It builds design thinking through daily practice. By Day 10 you will understand why login screens fail. By Day 20 you will know how to fix them.",
   },
   {
     question: "Do I need to know how to code?",
     answer:
-      "No. Cursor is your workspace but you will not write a single line of code inside it. Pencil generates the design, Cursor builds it, your browser shows it live with real hover states and animations. Your job is to direct the output, not produce it.",
+      "No. Pencil is a canvas design tool that lives inside your IDE. You open your `.pen` file in Cursor, type your prompt in the chat, and the design appears on the canvas. When you are happy with it, you tell Cursor to build it and your browser renders it live with real hover states and animations. Your job is to direct the output, not produce it.",
   },
   {
     question: "What tools do I need?",
     answer:
-      "Cursor and the Pencil extension. Both are available today. No design software license, no local server setup, no terminal commands. If you can download an app and follow three steps, you are ready.",
+      "Cursor and Pencil. Pencil is a canvas design tool that lives inside your IDE. Your `.pen` design files sit in your project folder alongside your code, version controlled with the rest of your work. No separate design software, no switching windows, no exporting assets.",
   },
   {
     question: "What exactly lands in my inbox each day?",
     answer:
-      "A UX problem, the component you are building, and — for the first 20 days — structured prompts to guide your direction. The prompts gradually disappear as you progress. By Day 21 you are writing everything yourself. That is intentional. The goal is not to follow instructions forever. It is to not need them.",
+      "A UX problem, the component you are building, and for the first 20 days structured prompts to guide your direction. The prompts gradually disappear as you progress. By Day 21 you are writing everything yourself. That is intentional. The goal is not to follow instructions forever. It is to not need them.",
   },
   {
     question: "What if I miss a day?",
@@ -39,7 +39,7 @@ const items = [
   {
     question: "What do I have at the end of Day 30?",
     answer:
-      "30 live, interactive interfaces — real components that run in a browser, not static mockups. A habit of daily execution. And a way of thinking about UX problems that does not go away when the challenge ends.",
+      "30 live, interactive interfaces. Real components that run in a browser, not static mockups. A habit of daily execution. And a way of thinking about UX problems that does not go away when the challenge ends.",
   },
   {
     question: "Why $24.99?",

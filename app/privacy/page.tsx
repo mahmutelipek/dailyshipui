@@ -4,9 +4,9 @@ import LegalPageShell from "@/components/LegalPageShell";
 import LegalSection from "@/components/LegalSection";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — DailyShipUI",
+  title: "Privacy Policy - DailyShipUI",
   description:
-    "How DailyShipUI collects, uses, and protects your data — email, payments via Lemon Squeezy, cookies, MailerLite, and your rights.",
+    "How DailyShipUI collects, uses, and protects your data: email, payments via Lemon Squeezy, cookies, MailerLite, and your rights.",
 };
 
 export default function PrivacyPolicyPage() {

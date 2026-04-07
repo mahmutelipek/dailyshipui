@@ -4,7 +4,7 @@ import LegalPageShell from "@/components/LegalPageShell";
 import LegalSection from "@/components/LegalSection";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — DailyShipUI",
+  title: "Terms of Service - DailyShipUI",
   description:
     "DailyShipUI terms: 30 day email challenge, no refunds, intellectual property, liability, and governing law.",
 };

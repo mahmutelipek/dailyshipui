@@ -86,7 +86,7 @@ export default function Navigation() {
           href="#how-it-works"
           className="hidden whitespace-nowrap font-sans text-[11px] font-medium text-[#666666] transition-colors hover:text-[#1A1A1A] sm:inline-block sm:text-[13px]"
         >
-          How it works?
+          The daily rhythm
         </Link>
         <Link
           href="#faq"
