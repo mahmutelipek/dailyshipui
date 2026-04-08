@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const LEMON_CHECKOUT_URL =
-  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e?embed=1";
+  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e";
 
 /** Footer links: muted + hover to full black. */
 const footerNavLinkClass =
@@ -53,9 +53,7 @@ export default function Footer() {
             </p>
             <Button
               nativeButton={false}
-              render={
-                <a href={LEMON_CHECKOUT_URL} className="lemonsqueezy-button" />
-              }
+              render={<a href={LEMON_CHECKOUT_URL} />}
             >
               Start shipping
             </Button>

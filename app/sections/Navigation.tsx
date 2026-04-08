@@ -12,7 +12,7 @@ import { scrollToTopImmediate } from "@/lib/scroll-root";
 /** Bump `?v=` when replacing `public/icons/icon.svg` so CDN/browser skip stale cache. */
 const NAV_LOGO = "/icons/icon.svg?v=4";
 const LEMON_CHECKOUT_URL =
-  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e?embed=1";
+  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e";
 
 export default function Navigation() {
   const router = useRouter();
@@ -98,7 +98,7 @@ export default function Navigation() {
         </Link>
         <Button
           nativeButton={false}
-          render={<a href={LEMON_CHECKOUT_URL} className="lemonsqueezy-button" />}
+          render={<a href={LEMON_CHECKOUT_URL} />}
         >
           Start shipping
         </Button>

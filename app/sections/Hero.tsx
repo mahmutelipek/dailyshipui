@@ -7,7 +7,7 @@ import { motion, useInView, useReducedMotion } from "motion/react";
 import { useRef } from "react";
 
 const LEMON_CHECKOUT_URL =
-  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e?embed=1";
+  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e";
 
 const heroFadeTransition = {
   duration: 0.55,
@@ -64,9 +64,7 @@ export default function Hero() {
         >
           <Button
             nativeButton={false}
-            render={
-              <a href={LEMON_CHECKOUT_URL} className="lemonsqueezy-button" />
-            }
+            render={<a href={LEMON_CHECKOUT_URL} />}
           >
             Start shipping
           </Button>
