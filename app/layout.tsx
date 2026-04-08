@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
+import Script from "next/script";
 import ScrollToTop from "@/components/ScrollToTop";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
@@ -40,6 +41,7 @@ const siteOrigin = resolvedOrigin();
 const siteTitle = "DailyShipUI - Ship UIs with AI";
 const siteDescription =
   "30 days. 30 UI challenges. Build real AI-native design skills. A fresh challenge every morning.";
+const GA_MEASUREMENT_ID = "G-WEQ3EP48HF";
 
 /** ASCII; bazı crawler’lar fancy tirede takılabiliyor. */
 const ogImageAlt = "DailyShipUI - The 30 day AI design challenge";
@@ -96,6 +98,18 @@ export default function RootLayout({
       className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}
     >
       <head>
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="DailyShipUI" />
