@@ -39,6 +39,7 @@ export default function Hero() {
           <BlurText
             as="h1"
             text="Ship UIs with AI."
+            effect="dissolve"
             animateBy="letters"
             direction="bottom"
             delayMs={50}
