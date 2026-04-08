@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
+const LEMON_CHECKOUT_URL =
+  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e?embed=1";
+
 /** Footer links: muted + hover to full black. */
 const footerNavLinkClass =
   "whitespace-nowrap font-sans text-[11px] font-medium transition-colors hover:text-[#1A1A1A] sm:text-[13px]";
@@ -48,7 +51,14 @@ export default function Footer() {
             <p className="mb-6 max-w-[300px] font-sans text-sm font-medium leading-relaxed text-[#00000080] sm:max-w-xl">
               30 days. One real skill. Start today.
             </p>
-            <Button type="button">Start shipping</Button>
+            <Button
+              nativeButton={false}
+              render={
+                <a href={LEMON_CHECKOUT_URL} className="lemonsqueezy-button" />
+              }
+            >
+              Start shipping
+            </Button>
           </div>
         </div>
       </div>

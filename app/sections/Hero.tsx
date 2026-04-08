@@ -3,9 +3,11 @@
 import { BlurText } from "@/components/BlurText";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
 import { motion, useInView, useReducedMotion } from "motion/react";
 import { useRef } from "react";
+
+const LEMON_CHECKOUT_URL =
+  "https://dailyshipui.lemonsqueezy.com/checkout/buy/5f955ac9-8652-499e-a47e-4fcd3dc6e79e?embed=1";
 
 const heroFadeTransition = {
   duration: 0.55,
@@ -60,7 +62,12 @@ export default function Hero() {
           animate={{ opacity: fadeOpacity }}
           transition={heroFadeTransition}
         >
-          <Button nativeButton={false} render={<Link href="#footer" />}>
+          <Button
+            nativeButton={false}
+            render={
+              <a href={LEMON_CHECKOUT_URL} className="lemonsqueezy-button" />
+            }
+          >
             Start shipping
           </Button>
         </motion.div>

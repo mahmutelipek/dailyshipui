@@ -96,6 +96,10 @@ export default function RootLayout({
       className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased`}
     >
       <head>
+        <script
+          src="https://assets.lemonsqueezy.com/lemon.js"
+          defer
+        ></script>
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="DailyShipUI" />
