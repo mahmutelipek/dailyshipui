@@ -1,13 +1,14 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import { scrollToTopImmediate } from "@/lib/scroll-root";
 
 /** Scroll to top on route change and first load; disables browser scroll restoration. */
 export default function ScrollToTop() {
   const pathname = usePathname();
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -15,6 +16,10 @@ export default function ScrollToTop() {
   }, []);
 
   useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
     scrollToTopImmediate();
   }, [pathname]);
 
